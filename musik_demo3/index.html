@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Newsfeed</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <div id="sidebar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="expand-btn">More &#9662;</li>
+        <li class="expandable"><a href="#">Settings</a></li>
+        <li class="expandable"><a href="#">Profile</a></li>
+        <li class="expandable"><a href="#">Messages</a></li>
+        <li class="expandable"><a href="#">Notifications</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <div id="post-area">
+        <textarea placeholder="Wanna send a song?" id="post-textarea"></textarea>
+        <button type="submit" onclick="togglePostOptions()">Post</button>
+      </div>
+      <div id="post-options-popup">
+        <!-- Add additional options here (e.g., tags, privacy settings, etc.) -->
+        <button onclick="submitPost()">Post Now</button>
+        <button onclick="saveDraft()">Save as Draft</button>
+        <button onclick="cancelPost()">Cancel</button>
+      </div>
+      <div class="actions">
+        <button onclick="toggleLike('post-1')">Like</button>
+        <button onclick="deletePost('post-1')">Delete</button>
+      </div>
+    </div>
+    <div id="right-sidebar">
+      <h2>Linh Hoang</h2>
+      <h3>Pinned songs</h3>
+      <ul class="friend-list">
+        <li class="friend-expanded">Linh Hoang
+          <ul>
+            <li>Ngot - de quen</li>
+          </ul>
+        </li>
+        <li>Friend 2</li>
+        <li>Friend 3</li>
+      </ul>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

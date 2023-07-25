@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #C733FF; 
+}
+
+#container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFFFFF; 
+}
+
+#sidebar {
+  flex: 0.5;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li {
+  margin-bottom: 10px;
+}
+
+#sidebar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+#sidebar .expandable {
+  display: none;
+}
+
+#sidebar .expanded {
+  display: block;
+}
+
+#content {
+  flex: 3;
+  margin-left: 20px;
+}
+
+#right-sidebar {
+  flex: 0.5;
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.post {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.post .author {
+  font-weight: bold;
+}
+
+.post .timestamp {
+  color: #888;
+  font-size: 12px;
+}
+
+.post .content {
+  margin-top: 5px;
+}
+
+.post .actions {
+  margin-top: 10px;
+}
+
+.post .actions a {
+  margin-right: 10px;
+}
+
+#post-area {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#post-area textarea {
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#post-area button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#post-area button:hover {
+  background-color: #45a049;
+}
+
+.expand-btn {
+  cursor: pointer;
+}
+
+.caret-down {
+  transform: rotate(360deg);
+}
+
+.friend-list {
+  cursor: pointer;
+}
+
+.friend-expanded {
+  background-color: #f9f9f9;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.friend-expanded ul {
+  padding-left: 15px;
+  list-style-type: none;
+}
+
+.friend-expanded ul li {
+  margin-bottom: 5px;
+}
+
+#post-options-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#content.blur-background {
+  filter: blur(5px);
+  pointer-events: none;
+}
